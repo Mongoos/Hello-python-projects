@@ -67,10 +67,10 @@ def get_next_location():
     else:
         return int(player_input)
 
-cave_numbers = [range(0,20)]
-unvisited_caves = [range(0,20)]
+cave_numbers = (range(20))
+unvisited_caves = list(range(20))
 visited_caves = []
-caves = list[setup_caves(cave_numbers)]
+caves = setup_caves(cave_numbers)
 
 visit_cave(0)
 print_caves()
